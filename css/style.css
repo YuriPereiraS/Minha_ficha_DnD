@@ -144,6 +144,7 @@ footer {
 .svg-footer {
     background-color: #0f0909;
     border: none;
+    padding-top: 10px;
 }
 
 .formularioDeContato {

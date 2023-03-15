@@ -1,0 +1,19 @@
+quinta
+
+menu sanduishe
+menu carosesel 
+
+sexta
+
+criar paginas em branco para o menu principal 
+criar pagina em branco para ver masi 
+
+extra :
+botar o formulario para salvar as informações
+------------------------------------------
+
+segunda/ quarta
+
+criar pagina semples para criar perosnagem
+
+
