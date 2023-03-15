@@ -1,0 +1,136 @@
+
+
+/* --header-- */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-container {
+    display: grid;
+    align-items: center;
+}
+
+.cabecalho-titulos {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-menu-sanduiche {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.cabecalho-menu-sanduiche-lista {
+    display: none;
+}
+
+.cabecalho-menu-sanduiche-lista-visivel {
+    display: block; 
+}
+
+.cabecalho-menu-sanduiche-btn {
+    display: block;
+}
+
+
+/* --main-- */
+
+/* --part1-- */
+
+.menuTelaPrincipal-titulo {
+    display: grid;
+    justify-content: space-between;
+}
+
+.menuTelaPrincipal_limitador {
+    display: flex;
+    justify-content: center;
+}
+
+.menuTelaPrincipal-listaDeItens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menuTelaPrincipal-itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* --part2-- */
+
+.cartasPersonagensAtivos_limitador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartasPersonagensAtivos_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* --part3-- */
+
+.carousel-paginaPrincipal {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-paginaPrincipal-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+}
+
+/* ------------------------------------------------------------------- */
+
+.div-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-formularioDeContato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formularioDeContato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-footerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-footerText ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-direitos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

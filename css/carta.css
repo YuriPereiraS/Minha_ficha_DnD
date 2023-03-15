@@ -1,0 +1,204 @@
+:root {
+    --branco: aliceblue;
+    --azul1: #205a83;
+    --azul2: #103149;
+    --azul3: #174769;
+    --azul4: #133a57;
+    --preto: #000000;
+}
+/* -------------------------------------- */
+.parteForaCarta {
+    background-color: var(--azul2);
+    width: 209px;
+    height: 324px;
+    border-radius: 16px;
+    border: solid var(--preto) 3px;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 0 4px 3px rgb(20, 20, 20);
+    margin: 15px 15px;
+    cursor: pointer;
+    position: relative;
+}
+.parteForaCarta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parteForaCarta:hover {
+    box-shadow: 0 0 4px 3px rgba(20, 20, 20, 0.5);
+    transform: scale(1.2);
+    transition: 500ms;
+}
+
+.parteDentroCarta {
+    background-color: var(--azul1);
+    width: 195px;
+    height: 310px;
+    border-radius: 12px;
+    border: solid var(--preto) 3px;
+    overflow: hidden;
+}
+.parteDentroCarta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cartaCabecalho {
+    width: 100%;
+    height: 10%;
+    border-radius: 10px 10px 0 0;
+    border-bottom: solid var(--preto) 3px;
+    background-color: var(--azul4);
+}
+.cartaCabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cartaCabecalho_esquerda {
+    width: 75%;
+    height: 100%;
+    background-color: var(--azul3);
+    padding-left: 8px;
+    color: var(--branco);
+    letter-spacing: 2px;
+}
+.cartaCabecalho_esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cartaCabecalho_esquerda_nome {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cartaCabecalho_esquerda_race{
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.cartaCabecalho_direita_conteiner {
+    width: 25%;
+    height: 100%;
+    background-color: var(--azul3);
+    color: var(--preto);
+}
+
+.cartaCabecalho_direita {
+    height: 100%;
+    border-left: var(--preto) solid 3.5px;
+    transform: skew(-35deg);
+    -webkit-transform: skew(-35deg);
+    background-color: var(--azul4);
+}
+
+.cartaCabecalho_direita_nivel{
+    position: absolute;
+    top: -1px;
+    right: -3px;
+}
+.cartaCabecalho_direita_nivel {
+    transform: skew(35deg);
+    width: 35px;
+    height: 35px;
+    background-color: var(--branco);
+    border-radius: 50%;
+    border: var(--preto) solid 3px;
+}
+
+.cartaCabecalho_direita_nivel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartaCabecalho_direita_nivel_numero {
+    display: block;
+    margin-top: 2px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cartaImg {
+    width: 100%;
+    height: 60%;
+    border-bottom: solid var(--preto) 3px;
+}
+.cartaImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cartaImg_sombra {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 30px 10px var(--preto) inset;
+    border-radius: 5px;
+}
+
+.cartaImg_img {
+    width: 168px;
+    height: 130px;
+    background-image: url(/imgs/imagen_referencia_personagem.png);
+    background-size: 100%;
+    border-radius: 12px;
+    border: var(--preto) solid 4px;
+}
+
+.cartaInfos {
+    width: 100%;
+    height: 101px;
+    background-color: var(--azul3);
+    color: var(--branco);
+    letter-spacing: 1px;
+}
+.cartaInfos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartaInfos_infos {
+    width: 90%;
+    height: 100%;
+}
+.cartaInfos_infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartaInfos_infos p {
+    margin: 0;
+}
+
+.cartaInfos_infos_subclasse,
+.cartaInfos_infos_classe {
+    width: 100%;
+    height: 19px;
+    padding-top: 15px;
+    border-bottom: solid var(--preto) 2px;
+}
+.cartaInfos_infos_subclasse,
+.cartaInfos_infos_classe {
+    display: flex;
+    align-items: center;
+}
+
+.cartaInfos_infos_subclasse_titulo,
+.cartaInfos_infos_classe_titulo {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.cartaInfos_infos_subclasse_resposta,
+.cartaInfos_infos_classe_resposta {
+    padding-left: 8px;
+    font-size: 12px;
+    font-weight: 300;
+}

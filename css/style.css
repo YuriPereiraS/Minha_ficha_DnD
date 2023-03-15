@@ -1,0 +1,315 @@
+
+body {
+    background-color:  #0f0909;
+    color: aliceblue;
+}
+
+.limitador {
+    max-width: 1568px;
+    margin: 0 auto;
+}
+
+
+/* --header-- */
+
+.cabecalho {
+    background-color: #205a83;
+    padding: 10px 0;
+}
+
+.cabecalho-container {
+    grid-template-columns: repeat(2, auto) max-content;
+    width: 1568px;
+}
+
+.cabecalho-titulos {
+    padding-left: 4%;
+    cursor: pointer;
+}
+
+.cabecalho-titulos-1 {
+    font-size: 3em;
+}
+
+.cabecalho-menu-sanduiche {
+    padding-right: 4%;
+}
+
+.cabecalho-menu-sanduiche-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+/* --main-- */
+
+/* --part1-- */
+
+.menuTelaPrincipal {
+    padding: 50px 0;
+    width: 90%;
+}
+
+.menuTelaPrincipal-titulo {
+    grid-template-columns: 200px 200px 200px 200px;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.menuTelaPrincipal-itens {
+    padding: 15px;
+    border: whitesmoke 2px solid;
+    border-radius: 15px;
+    box-shadow: 0 0 10px whitesmoke;
+    cursor: pointer;
+}
+
+.menuTelaPrincipal-itens:hover {
+    transform: scale(1.01);
+    transition: 0.5s;
+    box-shadow: 0 0 25px whitesmoke;
+}
+
+.menuTelaPrincipal-itens img {
+    width: 200px;
+}
+
+.menuTelaPrincipal-itens a {
+    font-size: 1.2em;
+    padding-top: 15px;
+}
+
+
+/* --part2-- */
+
+.cartasPersonagensAtivos_telaPrincipal {
+    width: 90%;
+}
+
+.cartasPersonagensAtivos_titulo p {
+    font-size: 24px;
+    font-weight: 600;
+    padding:  25px 0;
+    cursor: pointer;
+}
+
+.cartasPersonagensAtivos_container {
+    width: 100%;
+    height: auto;
+    border: solid 2px whitesmoke;
+    box-shadow: 0 0 10px whitesmoke;
+    border-radius: 15px;
+}
+
+/* --part3-- */
+
+.carousel-paginaPrincipal {
+    padding: 50px 0 25px;
+}
+
+.carousel-paginaPrincipal-container { 
+    width: 100%; 
+    height: 128px;
+}
+
+.carousel-paginaPrincipal-item img {
+    max-width: 128px;
+    cursor: pointer;
+}
+
+.carousel-paginaPrincipal-botaoVoltar {
+    order: -1;
+}
+
+.carousel-paginaPrincipal a {
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------- */
+
+footer {
+    width: 100%;
+    background-color: #205a83;
+    margin: 0 auto;
+}
+
+.div-footer {
+    padding: 25px 0;
+    max-width: 1568px;
+    margin: 0 auto;
+}
+
+.svg-footer {
+    background-color: #0f0909;
+    border: none;
+}
+
+.formularioDeContato {
+    border: 4px dashed white;
+    padding: 15px 20px;
+    background-color: #1a496b;
+    width: 55%;
+}
+
+.div-formularioDeContato {
+    width: 40%;
+}
+
+.div-footerText {
+    max-width: 60%;
+}
+
+.div-footerText ul {
+    width: 75%;
+}
+
+.formularioDeContato{ 
+    width: 65%;
+    text-align: center;
+}
+
+.formularioDeContato-nome, .formularioDeContato-email, .formularioDeContato-mensagem {
+    width: 65%;
+    resize: none;
+}
+
+.formularioDeContato-botao {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.formularioDeContato legend {
+    font-size: 1.5em;
+}
+
+.div-footer .titulo {
+    font-size: 1.5em;    
+}
+
+.div-footer ul p {
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.footer-direitos {
+    border-top: #0f0909 12px solid;
+    margin-top: 20px;
+    margin: auto 0;
+}
+
+.footer-direitos p {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 0.8em;
+    letter-spacing: 0.9px;
+}
+
+/* ------------------------ */
+
+@media screen and (max-width: 1120px) {
+
+    .cartasPersonagensAtivos_titulo p{
+        padding-top: 0px ;
+    }
+
+    .menuTelaPrincipal-listaDeItens {
+        justify-content: space-between;
+    }
+    .menuTelaPrincipal-itens {
+        margin:25px;
+        flex: 1 0 auto;
+    }
+
+    .menuTelaPrincipal-itens:nth-of-type(1), 
+    .menuTelaPrincipal-itens:nth-of-type(4) {
+        margin-left: 0;
+    }
+
+    .menuTelaPrincipal-itens:nth-of-type(3), 
+    .menuTelaPrincipal-itens:nth-of-type(4) {
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+
+    .menuTelaPrincipal-itens:nth-of-type(1), 
+    .menuTelaPrincipal-itens:nth-of-type(2),  
+    .menuTelaPrincipal-itens:nth-of-type(3), 
+    .menuTelaPrincipal-itens:nth-of-type(4) {
+        margin:25px;
+    }
+
+    .menuTelaPrincipal-itens:nth-of-type(1), 
+    .menuTelaPrincipal-itens:nth-of-type(3) {
+        margin-left: 0;
+        margin-right: 34px;
+    }
+
+    .menuTelaPrincipal-itens:nth-of-type(2), 
+    .menuTelaPrincipal-itens:nth-of-type(4) {
+        margin-right: 0;
+        margin-left: 34px;
+    }
+
+
+    .carousel-paginaPrincipal-container {
+        flex-wrap: wrap;
+    }
+
+    .div-footer {
+        flex-direction: column;
+    }
+
+    .div-footerText {
+        max-width: 90%;
+        padding-bottom: 40px;
+    }
+
+    .div-footerText ul{
+        width: 100%;
+    }
+
+
+    .div-formularioDeContato {
+        order: 1;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .menuTelaPrincipal-itens:nth-of-type(1), 
+    .menuTelaPrincipal-itens:nth-of-type(2),  
+    .menuTelaPrincipal-itens:nth-of-type(3), 
+    .menuTelaPrincipal-itens:nth-of-type(4) {
+        margin:25px;
+    }
+
+    .menuTelaPrincipal-itens:nth-of-type(1), 
+    .menuTelaPrincipal-itens:nth-of-type(3) {
+        margin-left: 0;
+    }
+
+    .menuTelaPrincipal-itens:nth-of-type(2), 
+    .menuTelaPrincipal-itens:nth-of-type(4) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .menuTelaPrincipal-itens:nth-of-type(1), 
+    .menuTelaPrincipal-itens:nth-of-type(2),  
+    .menuTelaPrincipal-itens:nth-of-type(3), 
+    .menuTelaPrincipal-itens:nth-of-type(4) {
+        margin:25px 0;
+    }
+
+    .menuTelaPrincipal-listaDeItens{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
