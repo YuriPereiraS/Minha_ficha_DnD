@@ -20,16 +20,24 @@
 
 .cabecalho-menu-sanduiche {
     display: flex;
-    align-items: center;
-    justify-content: end;
+    flex-direction: column;
+    align-items: end;
 }
 
 .cabecalho-menu-sanduiche-lista {
     display: none;
+    position: absolute;
+    flex-direction: column;
+}
+
+.cabecalho-menu-sanduiche-lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cabecalho-menu-sanduiche-lista-visivel {
-    display: block; 
+    display: flex; 
 }
 
 .cabecalho-menu-sanduiche-btn {

@@ -1,3 +1,6 @@
+:root {
+    --max-width: 1568px;
+}
 
 body {
     background-color:  #0f0909;
@@ -41,6 +44,31 @@ body {
     cursor: pointer;
 }
 
+.cabecalho-menu-sanduiche-lista {
+    left: 300px;
+    top: 84px;
+    transform: translateX(-100%); 
+    width: 250px;
+    border-radius:0 0 10% 10%;
+    overflow: hidden;
+}
+
+.cabecalho-menu-sanduiche-lista li {
+    padding: 15px 25px;
+    border-top: #1a496b solid 2px;
+    background-color: #205a83;
+    text-align: center;
+}
+.cabecalho-menu-sanduiche-lista li:hover {
+    background-color: #1a496b;
+}
+
+.cabecalho-menu-sanduiche-lista li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
 
 /* --main-- */
 
@@ -209,6 +237,13 @@ footer {
 }
 
 /* ------------------------ */
+/* @media screen and (min-width: 1586px) {
+    .cabecalho-menu-sanduiche-lista {
+        left: 2035px ;
+    }
+} */
+
+
 
 @media screen and (max-width: 1120px) {
 
