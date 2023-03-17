@@ -1,24 +1,54 @@
+
+
+
+
+const corpo = document.querySelector('body')
 const btnMenu = document.querySelector('.cabecalho-menu-sanduiche-btn');
-const listaMenu = document.querySelector('.cabecalho-menu-sanduiche-lista')
-
-btnMenu.addEventListener('click', () => {
-    listaMenu.classList.toggle('cabecalho-menu-sanduiche-lista-visivel')
-});
-
-const divCabecalho = document.querySelector('.cabecalho')
-const divCabecalhoContainer = document.querySelector('.cabecalho-container')
-const menuSanduiche = document.querySelector('[data-menuSanduiche]')
+const listaMenu = document.querySelector('.cabecalho-menu-sanduiche-lista');
 
 
-function atualizaDistancia() {
+btnMenu.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const visivel = 'cabecalho-menu-sanduiche-lista-visivel';
+  
+    if (listaMenu.classList.contains(visivel)) {
+      listaMenu.classList.remove(visivel);
+    } else {
+      listaMenu.classList.add(visivel);
+    }   
+  });
+  
+corpo.addEventListener('click', (event) => {
+    const visivel = 'cabecalho-menu-sanduiche-lista-visivel';
+  
+    if (event.target !== listaMenu && listaMenu.classList.contains(visivel)) {
+        listaMenu.classList.remove(visivel);
+    }   
+  });
+
+
+
+const divCabecalho = document.querySelector('.cabecalho');
+const divCabecalhoContainer = document.querySelector('.cabecalho-container');
+const menuSanduiche = document.querySelector('.menuSanduiche-ul');
+
+function atualizaDistancia(event) {
     const larguraAtual = divCabecalho.clientWidth;
     const larguraAtualDiv = divCabecalhoContainer.clientWidth;
-
     const valorCorreto = (larguraAtual / 2) + (larguraAtualDiv / 2) - 10;
+    const meio = larguraAtual / 2
+    
 
-    menuSanduiche.style.setProperty("left", valorCorreto + "px");
+    if (larguraAtual > 592) {
+        listaMenu.style.setProperty("left", valorCorreto + "px"); 
+    }   else {
+        listaMenu.style.setProperty("left", 'auto');
+    }
+
+    window.addEventListener('resize', atualizaDistancia);
 }
 
 atualizaDistancia();
 
-window.addEventListener('resize', atualizaDistancia)
+
+
