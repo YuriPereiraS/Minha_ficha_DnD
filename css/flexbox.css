@@ -90,18 +90,6 @@
 
 /* --part3-- */
 
-.carousel-paginaPrincipal {
-    display: flex;
-    align-items: center;
-}
-
-.carousel-paginaPrincipal-container {
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    overflow-y: hidden;
-    flex-wrap: nowrap;
-}
 
 /* ------------------------------------------------------------------- */
 

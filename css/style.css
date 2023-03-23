@@ -133,27 +133,53 @@ body {
 
 /* --part3-- */
 
-.carousel-paginaPrincipal {
-    padding: 50px 0 25px;
+.carousel-paginaPrincipal{
+    max-width: 1568px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.carousel-paginaPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.carousel-paginaPrincipal-container { 
-    width: 100%; 
-    height: 128px;
+.carousel-paginaPrincipal-container {
+    transition: transform 0.5s ease;
+}
+.carousel-paginaPrincipal-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 90%;
 }
 
+.carousel-paginaPrincipal-item {
+    width: 420px;
+    height: 210px;
+    margin: 20px;
+    background-color: gray;
+}
 .carousel-paginaPrincipal-item img {
-    max-width: 128px;
-    cursor: pointer;
+    width: 420px;
+    height: 210px;
+}
+
+.carousel-paginaPrincipal-botaoSegir, 
+.carousel-paginaPrincipal-botaoVoltar {
+    width: 50px;
+    height: 50px;
+    
 }
 
 .carousel-paginaPrincipal-botaoVoltar {
     order: -1;
+  }
+  
+.carousel-paginaPrincipal-botaoSegir {
+    order: 1;
 }
 
-.carousel-paginaPrincipal a {
-    cursor: pointer;
-}
 
 /* ------------------------------------------------------------------- */
 
@@ -236,12 +262,6 @@ footer {
     letter-spacing: 0.9px;
 }
 
-/* ------------------------ */
-/* @media screen and (min-width: 1586px) {
-    .cabecalho-menu-sanduiche-lista {
-        left: 2035px ;
-    }
-} */
 
 
 
@@ -290,9 +310,9 @@ footer {
         margin-right: 0;
     }
 
-    .carousel-paginaPrincipal-container {
+    /* .carousel-paginaPrincipal-container {
         flex-wrap: wrap;
-    }
+    } */
 
     .div-footer {
         flex-direction: column;
