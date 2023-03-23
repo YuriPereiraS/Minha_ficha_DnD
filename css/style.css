@@ -157,7 +157,7 @@ body {
 .carousel-paginaPrincipal-item {
     width: 420px;
     height: 210px;
-    margin: 20px;
+    margin-right: 20px;
     background-color: gray;
 }
 .carousel-paginaPrincipal-item img {
