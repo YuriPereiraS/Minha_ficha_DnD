@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/ficha.css">
+</head>
+<body>
+    <header>
+
+        <div class="cabecalho">
+            <div class="cabecalho-container limitador">
+
+                <div class="cabecalho-titulos">
+                    <a href="index.htm" class="cabecalho-titulos-1">D&D</a>
+                    <a href="index.htm" class="cabecalho-titulos-2">Fichas & Historias</a>
+                </div>
+
+                <nav class="cabecalho-menu-sanduiche">
+
+                    <button class="cabecalho-menu-sanduiche-btn">
+                        <svg width="42" height="42" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 18h16M4 6h16H4Zm0 6h16H4Z"></path>
+                      </svg>
+                    </button> 
+
+                    <ul class="cabecalho-menu-sanduiche-lista" data-menuSanduiche="menuSanduiche-ul">
+                        <li><a href="#">Inscreva-se</a>
+                            <svg width="25" height="25" fill="none" stroke="aliceblue" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <path d="M8.5 3a4 4 0 1 0 0 8 4 4 0 1 0 0-8z"></path>
+                                <path d="m17 11 2 2 4-4"></path>
+                          </svg></li>
+
+                        <li><a href="#">Seu perfil</a>
+                            <svg width="25" height="25" fill="none" stroke="aliceblue" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <path d="M12 3a4 4 0 1 0 0 8 4 4 0 1 0 0-8z"></path>
+                          </svg></li>
+
+                        <li><a href="#">Entre em contato</a>
+                            <svg width="25" height="25" fill="none" stroke="aliceblue" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                          </svg></li>
+                    </ul>
+
+                 </nav>
+            </div>
+        </div> 
+
+    </header>
+
+    <main>
+        <div class="main-container limitador">
+
+            <div class="ficha_container">
+                <div class="ficha_topo">
+
+                    <div class="ficha_imgPersonagem">
+                        <img src="imgs\imagen_referencia_personagem.png" alt="personagem">
+                    </div>
+
+                    <div class="ficha_topoInfos">
+
+                        <div class="ficha_topoInfos_linha1">
+
+                            <div class="ficha_topoInfos_nome" data-nomeinputs="Nome">
+                                <p>Nome:</p>
+                                <p class="ficha_topoInfos_nome_resultado cursor editable"  data-default="Nome" data-input="nome_input">Nome</p>
+                                <input type="text" value="" id="nome_input">
+                            </div>
+
+                            <div class="ficha_topoInfos_nivel">
+
+                                <div class="ficha_topoInfos_nivel_numero" data-nomeinputs="Nivel">
+                                    <p>level:</p>
+                                    <p class="ficha_topoInfos_nivel_numero_resultado cursor editable" data-default="level" data-input="level_input">level</p>
+                                    <input type="number" id="level_input">
+                                </div>
+
+                                <div class="ficha_topoInfos_nivel_XP">
+                                    <p>0/X</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ficha_topoInfos_linha2">
+                            <div class="ficha_topoInfos_raça" data-nomeinputs="Raça">
+                                <p>Raça:</p>
+                                <p class="ficha_topoInfos_raça_resultado cursor editable" data-default="Raça" data-input="raca_input">Raça</p>
+                                <input type="text" id="raca_input">
+                            </div>
+
+                            <div class="ficha_topoInfos_classe" data-nomeinputs="class">
+                                <p>Classe:</p>
+                                <p class="ficha_topoInfos_classe_resultado cursor editable" data-default="Classe" data-input="classe_input">Classe</p>
+                                <input type="text" id="classe_input">
+                            </div>
+
+                            <div class="ficha_topoInfos_alinhamento" data-nomeinputs="Alinhamento">
+                                <p>Alinhamento:</p>
+                                <p class="ficha_topoInfos_alinhamento_resultado cursor editable" data-default="Alinhamento" data-input="alinhamento_input">Alinhamento</p>
+                                <input type="text" id="alinhamento_input">
+                            </div>
+
+                            <div class="ficha_topoInfos_proeficiencia" data-nomeinputs="Proeficiencia">
+                                <p>Proeficiencia:</p>
+                                <p class="ficha_topoInfos_proeficiencia_resultado cursor editable" data-default="0" data-input="proeficiencia_input">0</p>
+                                <input type="number" id="proeficiencia_input">
+                            </div>
+                        </div>
+
+                        <div class="ficha_topoInfos_linha3">
+                          
+                            <div class="AtributosBasicos pontosDevida">
+
+                                <div class="pontosDevida div_text">
+                                    <p class="titulo pontosDevida">Pontos de vida</p>
+                                </div>
+                    
+                                <div class="pontosDevida div_valor cursor">
+                    
+                                    <div class="pontosDevida valor_insert" data-nomeinputs="PontosDevidaTemp">
+                                        <p class="editable" data-default="0" data-input="vidaTemp_input">0</p>
+                                        <input type="number" id="vidaTemp_input" >     
+                                    </div>
+                                    
+                                    <p>/</p>
+                    
+                                    <div class="pontosDevida valor_insert" data-nomeinputs="PontosDevidaMax">
+                                         <p class="editable" data-default="0" data-input="vidaMax_input">0</p>
+                                        <input type="number"  id="vidaMax_input" >
+                                    </div>
+                                </div>
+                                
+                                <div class="pontosDevida div_extra">
+                                    <p>+temp</p>
+                                    <p>+max</p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="AtributosBasicos dadosDeVida">
+
+                                <div class="dadosDeVida div_text">
+                                    <p class="titulo dadosDeVida">Dados de vida</p>
+                                </div>
+                    
+                                <div class="dadosDeVida div_valor cursor">
+                    
+                                    <div class="dadosDeVida valor_insert" data-nomeinputs="DadosDeVidaTemp">
+                                        <p class="editable" data-default="0" data-input="dadosVidaTemp_input">0</p>
+                                        <input type="number" id="dadosVidaTemp_input">
+                                    </div>
+                                    
+                                    <p>/</p>
+                    
+                                    <div class="dadosDeVida valor_insert" data-nomeinputs="DadosDeVidaMax">
+                                        <p class="editable" data-default="0" data-input="dadosVidaMax_input">0</p>
+                                        <input type="number" id="dadosVidaMax_input">
+                                    </div>
+                                </div>
+                                
+                                <div class="dadosDeVida div_extra">
+                                    <p>D.curto</p>
+                                    <p>D.longo</p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="AtributosBasicos classeArmadura">
+
+                                <div class="classeArmadura div_text">
+                                    <p class="titulo classeArmadura">Armor class</p>
+                                </div>
+                    
+                                <div class="classeArmadura div_valor cursor">
+                    
+                                    <div class="classeArmadura valor_insert" data-nomeinputs="ClasseArmadura">
+                                        <p class="editable" data-default="0" data-input="classeArmadura_input">0</p>
+                                        <input type="number" id="classeArmadura_input">
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="classeArmadura div_extra">
+                                    <p>SpellCD X</p>
+                                </div>                               
+                            </div>
+
+                            <div class="AtributosBasicos velocidade">
+
+                                <div class="velocidade div_text">
+                                    <p class="titulo velocidade">Velocidade (ft)</p>
+                                </div>
+                    
+                                <div class="velocidade div_valor cursor">
+                    
+                                    <div class="velocidade valor_insert" data-nomeinputs="Velocidade">
+                                        <p class="editable" data-default="0" data-input="velocidade_input">0</p>
+                                        <input type="number" id="velocidade_input">
+                                    </div>
+
+                                </div>
+                                
+                                <div class="velocidade div_extra">
+                                    <p>Andando</p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="AtributosBasicos Iniciativa">
+
+                                <div class="Iniciativa div_text">
+                                    <p class="titulo Iniciativa">Iniciativa</p>
+                                </div>
+                    
+                                <div class="Iniciativa div_valor cursor">
+                    
+                                    <div class="Iniciativa valor_insert" data-nomeinputs="Iniciativa">
+                                        <p class="editable" data-default="0" data-input="Iniciativa_input">0</p>
+                                        <input type="number" id="Iniciativa_input">  
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="Iniciativa div_extra div_valor" data-nomeinputs="IniciativaMod">
+                                    <p>Mod +</p>
+                                    <p class="editable" data-default="0" data-input="IniciativaMod_input">0</p>
+                                    <input type="number" id="IniciativaMod_input">  
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="ficha_seletor">
+                    <div class="ficha_atrinutos ">
+                        <p class="cursor">Atrinutos</p>
+                    </div>
+
+                    <div class="ficha_inventario">
+                        <p class="cursor">Inventario</p>
+                    </div>
+
+                    <div class="ficha_talentos">
+                        <p class="cursor">Talentos</p>
+                    </div>
+
+                    <div class="ficha_magias">
+                        <p class="cursor">Magias</p>
+                    </div>
+
+                    <div class="ficha_efeitos">
+                        <p class="cursor">Efeitos</p>
+                    </div>
+
+                    <div class="ficha_biografia">
+                        <p class="cursor">Biografia</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    </div>
+
+    <footer>
+
+        <svg class="svg-footer" id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 79.64" width="100%">
+            <defs>
+                <style>.cls-1{fill:#205a83;}</style>
+            </defs>
+            <path class="cls-1" d="M2560,90c-176.28-46.24-682.71-79.64-1280-79.64S176.28,43.76,0,90Z" transform="translate(0 -10.36)"/>
+        </svg>
+            
+        <div class="div-footer">
+            <div class="div-formularioDeContato">
+                <form class="formularioDeContato">
+                    <legend>Nos ajude a melhorar</legend>
+        
+                    <label>Nome</label>
+                    <input class="formularioDeContato-nome" name="name" type="name" required="required" placeholder="0u Nome">
+        
+                    <label>Email</label>
+                    <input  class="formularioDeContato-email" name="email" type="email" required="required" placeholder=" xxxx@gmail.com">
+        
+                    <label>Mensagem/Sugestão</label>
+                    <textarea class="formularioDeContato-mensagem" name="Mensagem" id="" cols="30" rows="10" required="required"></textarea>
+                    <input class="formularioDeContato-botao" type="submit">
+                </form>
+            </div>
+           
+            <div class="div-footerText">
+                <ul>
+                    <p class="titulo">Jogar ded: a diversão garantida em suas mãos</p>
+                    <p>Jogar ded é uma atividade divertida e empolgante, que pode ser apreciada por pessoas de todas as idades. Com apenas uma bola e algumas mãos habilidosas, é possível criar uma infinidade de jogos e desafios. Além disso, jogar ded ajuda a desenvolver a coordenação motora, a agilidade mental e a sociabilidade, tornando-o uma opção de entretenimento completa e saudável. Quem nunca experimentou, não sabe o que está perdendo!</p>
+                    <button class="button-64" role="button"><span class="text">Ver mais</span></button>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-direitos">
+            <p>Direitos autorais protegem obras criativas, como livros, músicas e filmes, garantindo que os criadores sejam reconhecidos e recompensados por seu trabalho. É importante respeitar os direitos autorais e obter permissão antes de usar ou reproduzir qualquer obra protegida.</p>
+        </div>
+
+    </footer>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/ficha.js"></script>
+</body>
+</html>

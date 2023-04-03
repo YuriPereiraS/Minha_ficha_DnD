@@ -1,0 +1,336 @@
+:root {
+    --branco: aliceblue;
+    --azul1: #205a83;
+    --azul2: #103149;
+    --azul3: #174769;
+    --azul4: #133a57;
+    --preto: #000000;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* ------ */
+.ficha_container {
+    width: 80%;
+    height: 900px;
+    margin: 50px auto; 
+    background-color: var(--azul1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ficha_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ficha_topo {
+    border-bottom: 2px solid var(--branco);
+    width: 100%;
+    height: 25%;   
+}
+.ficha_topo {
+    display: flex;
+    align-items: center;
+}
+
+.ficha_imgPersonagem {
+    width: 230px;
+    height: 225px;
+    border-right: 2px solid var(--branco);
+    background-color: var(--azul2);
+}
+.ficha_imgPersonagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----- */
+
+.ficha_imgPersonagem img {
+    width: 210px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* ----- */
+
+.ficha_topoInfos {
+    width: 100%;
+    height: 100%;
+}
+.ficha_topoInfos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -- */
+
+.ficha_topoInfos_linha1 {
+    width: 100%;
+    height: 30%;
+    background-color: var(--azul2);
+}
+.ficha_topoInfos_linha1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: space-between;
+}
+
+.ficha_topoInfos_nome {
+    width: 50%;   
+    height: 100%; 
+    margin-left: 20px;
+    
+}
+.ficha_topoInfos_nome {
+    display: flex;
+    align-items: center;
+}
+
+.ficha_topoInfos_nome p {
+    font-size: 24px;
+}
+
+.ficha_topoInfos_nome_resultado {
+    display: block;
+    padding-left: 10px;
+}
+
+.ficha_topoInfos_nome input {
+    display: none;
+    width: 80%;
+    background-color: var(--azul3);
+    color: var(--branco);
+}
+
+/* -- */
+
+.ficha_topoInfos_nivel{
+    width: 50%;
+}
+.ficha_topoInfos_nivel{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.ficha_topoInfos_nivel_numero {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.ficha_topoInfos_nivel_numero_resultado {
+    margin: 0 20px 0 10px ;
+}
+.ficha_topoInfos_nivel_numero_resultado {
+    display: flex;
+}
+
+
+.ficha_topoInfos_nivel_numero input {
+    display: none;
+    background-color: var(--azul3);
+    color: var(--branco);
+} 
+
+.ficha_topoInfos_nivel_XP {
+    margin-right: 20px;
+}
+
+
+/* -- */
+
+.ficha_topoInfos_linha2 {
+    width: 100%;
+    height: 15%;
+    border-top: 2px solid var(--branco);
+    background-color: var(--azul2);
+}
+.ficha_topoInfos_linha2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ficha_topoInfos_linha2 div {
+    width: 25%;
+    height: 100%;
+    border-left: 1px solid var(--branco) ;
+    padding-left: 10px;
+}
+.ficha_topoInfos_linha2 div {
+    display: flex;
+    align-items: center;
+}
+
+.ficha_topoInfos_alinhamento {
+    border-right: 1px solid var(--branco) ;
+}
+
+.ficha_topoInfos_raça_resultado, 
+.ficha_topoInfos_classe_resultado, 
+.ficha_topoInfos_alinhamento_resultado,
+.ficha_topoInfos_proeficiencia_resultado {
+    display: block;
+}
+
+.ficha_topoInfos_linha2 div input {
+    display: none;
+    width: 50%;
+    background-color: var(--azul3);
+    color: var(--branco);
+}
+
+/* -- */
+
+.ficha_topoInfos_linha3 {
+    width: 100%;
+    height: 55%;
+    border-top: 2px solid var(--branco);
+    background-color: var(--azul3);
+}
+.ficha_topoInfos_linha3 {
+    display: flex;
+    align-items: center;
+}
+
+.AtributosBasicos {
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid var(--branco);
+}
+.AtributosBasicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_text {
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+    text-align: center;
+}
+.div_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_text .titulo {
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--branco);
+}
+
+.div_valor {
+    width: 100%;
+    height: 40%;
+    margin-top: 10px;
+}
+.div_valor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valor_insert {
+    width: 50%;
+}
+.valor_insert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_valor input {
+    display: none;
+    width: 55px;
+    height: 30px;
+    font-size: 28px;
+    background-color: var(--azul4);
+    color: var(--branco);
+}
+
+.valor_insert p {
+    display: flex;
+    font-size: 28px;
+}
+
+.div_extra {
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+    text-align: center;
+}
+.div_extra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_extra p {
+    font-size: 16px;
+    font-weight: 600;
+    width: 50%;
+}
+.div_extra p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Iniciativa p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    cursor: pointer;
+}
+
+
+
+/* -- */
+
+.ficha_seletor {
+    border-bottom: 2px solid var(--branco);
+    width: 100%;
+    height: 5%;
+    background-color: var(--azul2);
+}
+.ficha_seletor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ficha_seletor div {
+    width: 17%;
+}
+.ficha_seletor div {
+    display: flex;
+    justify-content: center;
+}
+
+.ficha_seletor div p {
+    width: 60%;
+    padding-bottom: 5px;
+    border-bottom: 4px solid var(--branco);
+}
+.ficha_seletor div p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ----- */
+
+

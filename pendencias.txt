@@ -1,19 +1,18 @@
 quinta
 
 menu sanduishe* 
-menu carosesel 
+menu carosesel *
+botar o formulario para salvar as informações*
 
 sexta
 
-criar paginas em branco para o menu principal 
-criar pagina em branco para ver masi 
+criar paginas em branco para o menu principal*
+criar pagina em branco para ver masi *
 
-extra :
-botar o formulario para salvar as informações
 ------------------------------------------
 
 segunda/ quarta
 
-criar pagina semples para criar perosnagem
+criar pagina semples para criar perosnagem*
 
 

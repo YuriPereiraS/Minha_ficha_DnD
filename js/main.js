@@ -1,7 +1,5 @@
 
-
-
-
+// ---- menu sanduiche ----
 const corpo = document.querySelector('body')
 const btnMenu = document.querySelector('.cabecalho-menu-sanduiche-btn');
 const listaMenu = document.querySelector('.cabecalho-menu-sanduiche-lista');
@@ -27,7 +25,6 @@ corpo.addEventListener('click', (event) => {
   });
 
 
-
 const divCabecalho = document.querySelector('.cabecalho');
 const divCabecalhoContainer = document.querySelector('.cabecalho-container');
 const menuSanduiche = document.querySelector('.menuSanduiche-ul');
@@ -36,7 +33,6 @@ function atualizaDistancia(event) {
     const larguraAtual = divCabecalho.clientWidth;
     const larguraAtualDiv = divCabecalhoContainer.clientWidth;
     const valorCorreto = (larguraAtual / 2) + (larguraAtualDiv / 2) - 10;
-    const meio = larguraAtual / 2
     
 
     if (larguraAtual > 592) {
@@ -50,54 +46,32 @@ function atualizaDistancia(event) {
 
 atualizaDistancia();
 
-// -----
-
-let slideIndex = 0;
-const slides = document.getElementsByClassName("carousel-paginaPrincipal-item");
-
-const btnSeguir = document.querySelector(".carousel-paginaPrincipal-botaoSegir")
-const btnVoltar = document.querySelector(".carousel-paginaPrincipal-botaoVoltar")
 
 
+// ---- formulario contato ----
 
-function avancaSlide() {
-    if (slideIndex < slides.length -5) {
-      slideIndex ++;
-    } else {
-      slideIndex = 0;
-    }
+const submitForme = document.querySelector('.formularioDeContato')
 
-    atualizaSlide();
-}
+submitForme.addEventListener('submit', function(event) {
+  event.preventDefault();
 
-function voltaSlide() {
-    if (slideIndex > 0) {
-      slideIndex --
-    } else {
-      slideIndex = slides.length -5;
-    }
+  const nome = submitForme.elements['name'].value;
+  const email = submitForme.elements['email'].value;
+  const mensagem = submitForme.elements['Mensagem'].value;
 
-    atualizaSlide();   
-}
+  submitForme.reset();
 
+  let itemsContato = JSON.parse(localStorage.getItem('itemsContato')) || []
 
-function atualizaSlide() {
-    for (let i = 0; i < slides.length; i++) {
-      if (i >= slideIndex && i < slideIndex + 5 ) { 
-        slides[i].style.display = "block";
-        console.log(i)
-      } else {
-        slides[i].style.display = "none";
-      }
-    }
-    
-}
+  const novoContato = {
+    nome: nome,
+    email: email,
+    mensagem: mensagem
+  };
 
+  itemsContato.push(novoContato);
 
-btnSeguir.addEventListener('click', () => {
-    avancaSlide()
+  localStorage.setItem('itemsContato', JSON.stringify(itemsContato));
+
 });
 
-btnVoltar.addEventListener('click', () => {
-    voltaSlide() 
-});

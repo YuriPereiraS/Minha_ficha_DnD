@@ -31,7 +31,7 @@
                     </button> 
 
                     <ul class="cabecalho-menu-sanduiche-lista" data-menuSanduiche="menuSanduiche-ul">
-                        <li><a href="#">Se escreva</a>
+                        <li><a href="#">Inscreva-se</a>
                             <svg width="25" height="25" fill="none" stroke="aliceblue" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                                 <path d="M8.5 3a4 4 0 1 0 0 8 4 4 0 1 0 0-8z"></path>
@@ -66,20 +66,28 @@
                 <ul class="menuTelaPrincipal-listaDeItens">
     
                     <li class="menuTelaPrincipal-itens">
-                        <img src="imgs\icones barra (1).png" alt="img referente">
-                        <a src="#">texto referente</a>
+                        <a href="CriacaoPersonagens.html">
+                            <img src="imgs\icones barra (1).png" alt="img referente">
+                            <a class="menuTelaPrincipal-itens-a">Crie Sua Ficha</a>
+                        </a>                        
                     </li>
                     <li class="menuTelaPrincipal-itens">
-                        <img src="imgs\icones barra (2).png" alt="img referente">
-                        <a src="#">texto referente</a>
+                        <a href="CriacaoPersonagens.html">
+                            <img src="imgs\icones barra (2).png" alt="img referente">
+                            <a class="menuTelaPrincipal-itens-a">texto referente</a>
+                        </a>
                     </li>
                     <li class="menuTelaPrincipal-itens">
-                        <img src="imgs\icones barra (3).png" alt="img referente">
-                        <a src="#">texto referente</a>
+                        <a href="CriacaoPersonagens.html">
+                            <img src="imgs\icones barra (3).png" alt="img referente">
+                            <a class="menuTelaPrincipal-itens-a">texto referente</a>
+                        </a>
                     </li>
                     <li class="menuTelaPrincipal-itens">
-                        <img src="imgs\icones barra (4).png" alt="img referente">
-                        <a src="#">texto referente</a>
+                        <a href="CriacaoPersonagens.html">
+                            <img src="imgs\icones barra (4).png" alt="img referente">
+                            <a class="menuTelaPrincipal-itens-a">texto referente</a>
+                        </a>                        
                     </li>
                 </ul>
             </div>
@@ -141,39 +149,39 @@
             <div class="carousel-paginaPrincipal-container">
 
                 <div class="carousel-paginaPrincipal-item">
-                    <img src="/imgs/banner (1).png" alt="img referente" style="background-color: rgb(66, 66, 66);">
+                    <img src="/imgs/banner (1).png" alt="img referente">
                 </div>
 
                 <div class="carousel-paginaPrincipal-item">
-                    <img src="/imgs/banner (2).png" alt="img referente" style="background-color: rgb(59, 48, 48);">
+                    <img src="/imgs/banner (2).png" alt="img referente">
                 </div>
 
                 <div class="carousel-paginaPrincipal-item">
-                    <img src="/imgs/banner (3).png" alt="img referente" style="background-color: rgb(65, 41, 41);">
+                    <img src="/imgs/banner (3).png" alt="img referente">
                 </div>
 
                 <div class="carousel-paginaPrincipal-item">
-                    <img src="/imgs/banner (4).png" alt="img referente" style="background-color: rgb(54, 25, 25);">
+                    <img src="/imgs/banner (4).png" alt="img referente">
                 </div>
 
                 <div class="carousel-paginaPrincipal-item">
-                    <img src="/imgs/banner (5).png" alt="img referente" style="background-color: rgb(77, 34, 34);">
+                    <img src="/imgs/banner (5).png" alt="img referente">
                 </div>
 
                 <div class="carousel-paginaPrincipal-item">
-                    <img src="/imgs/banner (6).png" alt="img referente" style="background-color: rgb(90, 21, 21);">
+                    <img src="/imgs/banner (6).png" alt="img referente">
                 </div>
 
                 <div class="carousel-paginaPrincipal-item">
-                    <img src="/imgs/banner (7).png" alt="img referente" style="background-color: rgb(95, 10, 10);">
+                    <img src="/imgs/banner (7).png" alt="img referente">
                 </div>
 
                 <div class="carousel-paginaPrincipal-item">
-                    <img src="/imgs/banner (8).png" alt="img referente" style="background-color: rgb(114, 0, 0);">
+                    <img src="/imgs/banner (8).png" alt="img referente">
                 </div>
 
                 <div class="carousel-paginaPrincipal-item">
-                    <img src="/imgs/banner (9).png" alt="img referente" style="background-color: rgb(114, 0, 0);">
+                    <img src="/imgs/banner (9).png" alt="img referente">
                 </div>
 
             </div>
@@ -208,10 +216,10 @@
                     <legend>Nos ajude a melhorar</legend>
         
                     <label>Nome</label>
-                    <input class="formularioDeContato-nome" type="name" required="required" placeholder="Seu Nome">
+                    <input class="formularioDeContato-nome" name="name" type="name" required="required" placeholder="Seu Nome">
         
                     <label>Email</label>
-                    <input  class="formularioDeContato-email" type="email" required="required" placeholder=" xxxx@gmail.com">
+                    <input  class="formularioDeContato-email" name="email" type="email" required="required" placeholder=" xxxx@gmail.com">
         
                     <label>Mensagem/Sugestão</label>
                     <textarea class="formularioDeContato-mensagem" name="Mensagem" id="" cols="30" rows="10" required="required"></textarea>
@@ -233,6 +241,8 @@
         </div>
 
     </footer>
+
     <script src="/js/main.js"></script>
+    <script src="/js/pgPrincipal.js"></script>
 </body>
 </html>

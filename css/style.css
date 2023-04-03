@@ -12,6 +12,10 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* --header-- */
 
@@ -104,7 +108,7 @@ body {
     width: 200px;
 }
 
-.menuTelaPrincipal-itens a {
+.menuTelaPrincipal-itens-a {
     font-size: 1.2em;
     padding-top: 15px;
 }
@@ -353,7 +357,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 592px) {
+@media screen and (max-width: 612px) {
     .cabecalho-menu-sanduiche-lista {
         flex-direction: column;
         align-items: center;
@@ -362,6 +366,11 @@ footer {
         top: auto;
         transform: translateX(0);
         border-radius: 0;
+    }
+
+    .cabecalho-titulos {
+        text-align: center;
+        padding-left: 0;
     }
 
     .cabecalho-menu-sanduiche-lista li {
