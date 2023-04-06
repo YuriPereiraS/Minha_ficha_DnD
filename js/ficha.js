@@ -1,5 +1,18 @@
 const editables = document.querySelectorAll(".editable");
 
+function retonar (element) {
+  const defaultTextParent = element.parentNode;
+  const nomeInputs = defaultTextParent.dataset.nomeinputs;
+
+  const defaultText = element.dataset.default
+ 
+  const infoSalva = localStorage.getItem('fichaStatus')
+  const infoFicha = JSON.parse(infoSalva);
+
+
+  element.textContent = infoFicha[nomeInputs] || defaultText 
+}
+
 function setupEditable(element) {
   const defaultText = element.dataset.default;
   const inputId = element.dataset.input;
@@ -56,16 +69,4 @@ function salvaInfos(element) {
 
 
 
-function retonar (element) {
-  const defaultTextParent = element.parentNode;
-  const nomeInputs = defaultTextParent.dataset.nomeinputs;
-
-  const defaultText = element.dataset.default
- 
-  const infoSalva = localStorage.getItem('fichaStatus')
-  const infoFicha = JSON.parse(infoSalva);
-
-
-  element.textContent = infoFicha[nomeInputs] || defaultText 
-}
 
