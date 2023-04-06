@@ -5,7 +5,7 @@ function setupEditable(element) {
   const inputId = element.dataset.input;
   const input = document.getElementById(inputId);
 
-  retonar(element)
+  // retonar(element)
 
   element.addEventListener('click', () => { 
     element.style.display = 'none';
