@@ -68,11 +68,13 @@ function retonar (element) {
   const nula = ''
 
 
-  if (infoFicha[nomeInputs] == nula) { 
-    element.textContent = defaultText
-  } else {
-    element.textContent = infoFicha[nomeInputs]
-  }
+  // if (infoFicha[nomeInputs] == nula) { 
+  //   element.textContent = defaultText
+  // } else {
+  //   element.textContent = infoFicha[nomeInputs]
+  // }
 
+
+  element.textContent = infoFicha[nomeInputs] || defaultText 
 }
 
