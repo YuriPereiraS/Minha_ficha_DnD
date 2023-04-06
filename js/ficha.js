@@ -27,11 +27,10 @@ function setupEditable(element) {
       element.textContent = element.textContent;
     } else {
       element.textContent = value;
+      salvaInfos(element)
     }
     input.style.display = 'none';
     element.style.display = 'block';
-    salvaInfos(element)
-    
   });
 }
 
@@ -69,7 +68,7 @@ function retonar (element) {
   
 
 
-  if (infoFicha[nomeInputs] == "") { 
+  if (infoFicha[nomeInputs] == 'none') { 
     element.textContent = defaultText
   } else {
     element.textContent = infoFicha[nomeInputs]
