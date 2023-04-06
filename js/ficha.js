@@ -68,7 +68,7 @@ function retonar (element) {
   
 
 
-  if (infoFicha[nomeInputs] == 'none') { 
+  if (infoFicha[nomeInputs] == null) { 
     element.textContent = defaultText
   } else {
     element.textContent = infoFicha[nomeInputs]
