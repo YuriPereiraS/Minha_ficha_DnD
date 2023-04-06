@@ -5,9 +5,12 @@ function setupEditable(element) {
   const inputId = element.dataset.input;
   const input = document.getElementById(inputId);
 
-  element.addEventListener('click', () => {
+  retonar(element)
+
+  element.addEventListener('click', () => { 
     element.style.display = 'none';
     input.style.display = 'block';
+    input.value = element.textContent
     input.focus();
   });
 
@@ -15,45 +18,62 @@ function setupEditable(element) {
     if (event.key === 'Enter') {
         input.display = 'block';
         input.style.display = 'none';
-        input.textContent = input.value
     }
   });
 
   input.addEventListener('blur', () => {
     const value = input.value.trim();
     if (value === '') {
-      element.textContent = defaultText;
+      element.textContent = element.textContent;
     } else {
       element.textContent = value;
     }
     input.style.display = 'none';
     element.style.display = 'block';
     salvaInfos(element)
+    
   });
-
-  
-
 }
 
 editables.forEach((element) => {
   setupEditable(element);
 })
 
-const infoFicha = {};
 
 
-function salvaInfos (element) {
+function salvaInfos(element) {
   const inputId = element.dataset.input;
   const input = document.getElementById(inputId);
   const defaultTextParent = element.parentNode;
   const nomeInputs = defaultTextParent.dataset.nomeinputs;
 
-  infoFicha[nomeInputs] = input.value;
-
   const fichaAtual = localStorage.getItem('fichaStatus');
-  const novaficha = fichaAtual ? JSON.parse(fichaAtual) : [];
-  novaficha.push(infoFicha);
+  const novaficha = fichaAtual ? JSON.parse(fichaAtual) : {};
 
-  localStorage.setItem('ficha', JSON.stringify(novaficha));
+  novaficha[nomeInputs] = input.value;
+
+  localStorage.setItem('fichaStatus', JSON.stringify(Object.assign({}, novaficha)));
+}
+
+
+
+function retonar (element) {
+  const defaultTextParent = element.parentNode;
+  const nomeInputs = defaultTextParent.dataset.nomeinputs;
+
+  const defaultText = element.dataset.default
+ 
+  const infoSalva = localStorage.getItem('fichaStatus')
+  const infoFicha = JSON.parse(infoSalva);
+
+  
+
+
+  if (infoFicha[nomeInputs] == "") { 
+    element.textContent = defaultText
+  } else {
+    element.textContent = infoFicha[nomeInputs]
+  }
+
 }
 
