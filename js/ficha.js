@@ -5,7 +5,7 @@ function setupEditable(element) {
   const inputId = element.dataset.input;
   const input = document.getElementById(inputId);
 
-  // retonar(element)
+  retonar(element)
 
   element.addEventListener('click', () => { 
     element.style.display = 'none';
@@ -64,15 +64,6 @@ function retonar (element) {
  
   const infoSalva = localStorage.getItem('fichaStatus')
   const infoFicha = JSON.parse(infoSalva);
-
-  const nula = ''
-
-
-  // if (infoFicha[nomeInputs] == nula) { 
-  //   element.textContent = defaultText
-  // } else {
-  //   element.textContent = infoFicha[nomeInputs]
-  // }
 
 
   element.textContent = infoFicha[nomeInputs] || defaultText 
