@@ -65,10 +65,10 @@ function retonar (element) {
   const infoSalva = localStorage.getItem('fichaStatus')
   const infoFicha = JSON.parse(infoSalva);
 
-  
+  const nula = ''
 
 
-  if (infoFicha[nomeInputs] == null) { 
+  if (infoFicha[nomeInputs] == nula) { 
     element.textContent = defaultText
   } else {
     element.textContent = infoFicha[nomeInputs]
