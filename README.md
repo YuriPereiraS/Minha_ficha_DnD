@@ -1,4 +1,4 @@
-# um site par criar fichas de D&D.
+# um site para criar fichas de D&D.
 
 
 EM CONSTRUÇÃO 
